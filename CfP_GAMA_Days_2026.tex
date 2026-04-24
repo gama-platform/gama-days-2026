@@ -1,0 +1,98 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx} 
+\usepackage{hyperref}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{qrcode}
+
+% GAMA Brand Colors
+\definecolor{gamaBlue}{RGB}{41, 105, 176}
+\definecolor{gamaOrange}{RGB}{235, 95, 52}
+
+% Modern section styling
+\titleformat{\section}{\large\bfseries\color{gamaBlue}}{}{0em}{}[\titlerule]
+
+\begin{document}
+\pagestyle{empty}
+
+% Header Card with QR Code
+\begin{center}
+    \begin{minipage}{0.7\textwidth}
+        \vspace{0.2cm}
+        \includegraphics[width=0.7\textwidth]{images/dark_logo.png} \\
+        \vspace{0.3cm} 
+        {\large \bfseries Nov 11 to 13, 2026} \\ 
+        {\large \textcolor{gray}{(Free registration, online event)}} \\
+        \vspace{0.2cm}
+        \url{https://gama-platform.org/gama-days-2026} 
+    \end{minipage}
+    \begin{minipage}{0.25\textwidth}
+        \centering
+        \qrcode[height=1.5in]{https://gama-platform.org/gama-days-2026} \\
+        \vspace{0.2cm}
+        \footnotesize \textcolor{gamaBlue}{\textbf{SCAN TO JOIN}}
+    \end{minipage}
+\end{center}
+
+\vspace{0.5cm}
+
+% Introduction
+\noindent Following several successful editions, the GAMA Days 2026 is the international conference where users and developers of the GAMA modelling and simulation platform meet to present work, discuss difficulties, and collaborate on exciting topics. 
+
+% Keywords Section
+\begin{tcolorbox}[colback=gamaBlue!5, colframe=gamaBlue!20, boxrule=0.5pt, sharp corners]
+    \textbf{\textcolor{gamaBlue}{KEYWORDS:}} GAMA, Multi-agent systems, model, Simulation, Complex systems, model coupling 
+\end{tcolorbox}
+
+% Submission Content
+\section*{Abstract Submission}
+GAMA Days 2026 seeks submissions of abstracts that: 
+\begin{itemize}[label=\color{gamaOrange}$\bullet$]
+    \item Present a \textbf{new feature} for GAMA. 
+    \item Present a \textbf{model} that uses GAMA. 
+    \item Propose a \textbf{live demo} or \textbf{master class}. 
+\end{itemize}
+
+\noindent At least one author of each submission is required to register, attend, and present at the conference. 
+
+\vspace{0.5cm}
+
+% Important Dates Card
+\begin{tcolorbox}[colback=gamaOrange!5, colframe=gamaOrange, title=\textbf{IMPORTANT DATES}, fonttitle=\bfseries, enhanced, attach boxed title to top left={yshift=-2mm, xshift=5mm}]
+    \renewcommand{\arraystretch}{1.4}
+    \begin{tabular}{ll}
+        \textbf{Abstract submission deadline:} & TBD \\
+        \textbf{Notification of acceptance:} & TBD \\
+        \textbf{Conference:} & 11--13. November, 2026 
+    \end{tabular}
+\end{tcolorbox}
+
+\section*{Peer-review and Publication}
+The program committee will review submissions to determine if a contribution is accepted for a talk or an elevator pitch. All accepted abstracts will be published on the \textbf{HAL open archive}. 
+
+\vfill
+
+% Modern Footer
+\begin{center}
+    \begin{tcolorbox}[colback=gray!5, colframe=gray!20, boxrule=0.5pt, width=0.85\textwidth, halign=center]
+        \textit{The event will be hosted by:} \\
+        \vspace{0.3cm}
+        \begin{minipage}{0.4\textwidth}
+            \centering
+            \includegraphics[width=0.7\textwidth]{images/ummisco2.png} 
+        \end{minipage}
+        \begin{minipage}{0.4\textwidth}
+            \centering
+            \includegraphics[width=0.7\textwidth]{images/ird.png} 
+        \end{minipage} \\
+        \vspace{0.3cm}
+        \textbf{IRD / UMMISCO} \\
+        Institut de Recherche pour le Développement, FRANCE 
+    \end{tcolorbox}
+\end{center}
+
+\end{document}
