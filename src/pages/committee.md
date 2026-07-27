@@ -19,7 +19,6 @@ lead: "The people organizing and reviewing GAMA Days 2026."
 		<img src="https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=nvqR2P8AAAAJ&citpid=1" />
 		Arnaud Grignard 
 		— <a href="https://scholar.google.com/citations?user=nvqR2P8AAAAJ" target="_blank" rel="noopener">Google Scholar</a> 
-		/ <a href="https://orcid.org/0000-0002-0548-8071" target="_blank" rel="noopener">ORCID</a>
 	</li>
 	<li>
 		<img src="https://across-lab.org/wp-content/uploads/2022/10/z3794123763207_b1bf60f07e1a27612cb5f05d7aa246c4.jpg" />
@@ -63,14 +62,13 @@ lead: "The people organizing and reviewing GAMA Days 2026."
 	<li>
 		<img src="https://across-lab.org/wp-content/uploads/2022/07/Benoit-Gaudou-1.png" />
 		Benoit Gaudou 
-		— <a href="https://scholar.google.com/citations?user=hv1aHYAAAAJ" target="_blank" rel="noopener">Google Scholar</a> 
+		— <a href="https://scholar.google.com/citations?user=-hv1aHYAAAAJ" target="_blank" rel="noopener">Google Scholar</a> 
 		/ <a href="https://orcid.org/0000-0002-9005-3004" target="_blank" rel="noopener">ORCID</a>
 	</li>
 	<li>
 		<img src="https://project-simple.eu/wp-content/uploads/2023/11/huynh-quang-nghi.jpg" />
 		Nghi Quang Huynh 
 		— <a href="https://scholar.google.com/citations?user=3EeulPcAAAAJ" target="_blank" rel="noopener">Google Scholar</a> 
-		/ <a href="https://orcid.org/0000-0003-3608-9580" target="_blank" rel="noopener">ORCID</a>
 	</li>
 </ul>
 
