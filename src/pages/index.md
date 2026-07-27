@@ -15,14 +15,14 @@ buttons:
 ---
 
 <div class="key-dates">
-<div class="key-date"><span class="key-date-label">Abstract deadline</span><span class="key-date-value">15 September 2026</span></div>
-<div class="key-date"><span class="key-date-label">Notification</span><span class="key-date-value">15 October 2026</span></div>
-<div class="key-date"><span class="key-date-label">Conference (online)</span><span class="key-date-value">23–25 November 2026</span></div>
+  <div class="key-date"><span class="key-date-label">Abstract deadline</span><span class="key-date-value">15 September 2026</span></div>
+  <div class="key-date"><span class="key-date-label">Notification</span><span class="key-date-value">15 October 2026</span></div>
+  <div class="key-date"><span class="key-date-label">Conference (online)</span><span class="key-date-value">23–25 November 2026</span></div>
 </div>
 
 ## Call for Papers
 
-After three successful editions in 2021, 2022 and 2024, GAMA Days 2026 offers a new opportunity for users and developers of the GAMA modelling and simulation platform to meet, present their work, expose their difficulties, suggest improvements and, more generally, exchange and collaborate on exciting topics related to GAMA!
+After three successful editions in [2021](https://www.irit.fr/GamaDays2021/), [2022](https://gama-platform.org/gama.resources/Gama-Days-2022/) and [2024](https://gama-platform.org/gama-days-2024/), **GAMA Days 2026** offers a new opportunity for users and developers of the GAMA modelling and simulation platform to meet, present their work, expose their difficulties, suggest improvements and, more generally, exchange and collaborate on exciting topics related to GAMA!
 
 ### What we're looking for
 
@@ -39,10 +39,10 @@ At least one of the authors of each submission is required to register, attend, 
 ## How to submit
 
 <ol class="steps">
-<li>Prepare an abstract of your presentation (maximum 500 words) with author information.</li>
-<li>Decide whether to submit a presentation only, or a presentation with a demonstration — a 10-minute demo of your model, live or recorded, right after the talk.</li>
-<li>Format your abstract using the <a href="/gama-days-2026/Style-GamaDays2026.zip">Word or LaTeX style templates</a>.</li>
-<li>Submit it via <a href="https://gamadays2026.sciencesconf.org/">Sciencesconf</a>.</li>
+  <li>Prepare an abstract of your presentation (maximum 500 words) with author information.</li>
+  <li>Decide whether to submit a presentation only, or a presentation with a demonstration — a 10-minute demo of your model, live or recorded, right after the talk.</li>
+  <li>Format your abstract using the <a href="/gama-days-2026/Style-GamaDays2026.zip">Word or LaTeX style templates</a>.</li>
+  <li>Submit it via <a href="https://gamadays2026.sciencesconf.org/">Sciencesconf</a>.</li>
 </ol>
 
 ### Peer review and publication

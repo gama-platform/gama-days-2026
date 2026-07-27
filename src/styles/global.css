@@ -425,8 +425,9 @@ p {
 }
 
 .person-list img {
-  width: 14px;
-  height: 14px;
+  max-width: 10em;
+  max-height: 10em;
+  border-radius: 30px;
 }
 
 /* Footer */
