@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/PageLayout.astro
 title: GAMA Days 2026
-eyebrow: "Call for Papers now open"
+eyebrow: ""
 description: "GAMA Days 2026 — call for papers, key dates and submission details for the online conference for users and developers of the GAMA agent-based modeling and simulation platform, organized by UMMISCO."
 lead: "GAMA Days 2026 is an online conference open to all users and developers of the GAMA platform, organized by UMMISCO. Present your latest creations and applications based on the GAMA open-source project."
 image: images/contribution.png
@@ -9,7 +9,7 @@ imageAlt: "GAMA platform contributions"
 buttons:
   - label: Submit your abstract
     href: https://gamadays2026.sciencesconf.org/
-  - label: Download the CfP (PDF)
+  - label: Download the Call for Papers (PDF)
     href: /gama-days-2026/CfP_GAMA_Days_2026.pdf
     secondary: true
 ---
@@ -17,7 +17,7 @@ buttons:
 <div class="key-dates">
 <div class="key-date"><span class="key-date-label">Abstract deadline</span><span class="key-date-value">15 September 2026</span></div>
 <div class="key-date"><span class="key-date-label">Notification</span><span class="key-date-value">15 October 2026</span></div>
-<div class="key-date"><span class="key-date-label">Conference</span><span class="key-date-value">23–25 November 2026</span></div>
+<div class="key-date"><span class="key-date-label">Conference (online)</span><span class="key-date-value">23–25 November 2026</span></div>
 </div>
 
 ## Call for Papers
@@ -26,11 +26,11 @@ After three successful editions in 2021, 2022 and 2024, GAMA Days 2026 offers a 
 
 ### What we're looking for
 
-- present a new feature of the GAMA platform
-- present the coupling of GAMA with other tools
-- present a model written using GAMA
-- introduce a tutorial on some GAMA features
-- introduce a live demo or master class
+- A new feature of the GAMA platform
+- The coupling of GAMA with other tools
+- A model written using GAMA
+- A tutorial on some GAMA features
+- A live demo or master class
 
 At least one of the authors of each submission is required to register, attend, and present at the conference.
 
@@ -47,7 +47,7 @@ At least one of the authors of each submission is required to register, attend, 
 
 ### Peer review and publication
 
-The program committee will review all submissions and decide whether a contribution is accepted for a talk, accepted for an elevator pitch, or rejected.
+The program committee will review all submissions and decide whether a contribution is *accepted for a talk*, *accepted for a keynote*, or *rejected*.
 
 All accepted abstracts will be published on [the HAL open archive](https://hal.archives-ouvertes.fr/), and accepted contributions will further be invited to submit short or full papers to a special issue of a journal.
 

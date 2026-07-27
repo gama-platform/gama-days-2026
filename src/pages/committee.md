@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/PageLayout.astro
 title: Committee
-eyebrow: "GAMA Days 2026"
+eyebrow: ""
 description: "Steering and program committee for GAMA Days 2026."
 lead: "The people organizing and reviewing GAMA Days 2026."
 ---
