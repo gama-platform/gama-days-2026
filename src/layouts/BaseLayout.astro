@@ -13,8 +13,8 @@ const {
   description = 'GAMA Days 2026 — the conference for users and developers of the GAMA agent-based modeling and simulation platform.',
 } = Astro.props;
 
-const pageTitle = title === 'GAMA Days 2026' ? title : `${title} · GAMA Days 2026`;
-const ogImage = 'https://gama-platform.org/img/gama-logo.png';
+const pageTitle = title === 'GAMA Days 2026' ? title : `${title}`;
+const ogImage = 'https://gama-platform.org/gama-days-2026/images/logo.png';
 ---
 
 <!DOCTYPE html>
@@ -26,7 +26,7 @@ const ogImage = 'https://gama-platform.org/img/gama-logo.png';
     <meta name="description" content={description} />
     <link rel="shortcut icon" href="https://gama-platform.org/img/gama-logo.png" />
 
-    <meta property="og:title" content={`GAMA-Platform · ${pageTitle}`} />
+    <meta property="og:title" content={`GAMA Days 2026 · ${pageTitle}`} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url.href} />
     <meta property="og:description" content={description} />
