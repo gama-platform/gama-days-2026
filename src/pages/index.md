@@ -47,9 +47,7 @@ At least one of the authors of each submission is required to register, attend, 
 
 ### Peer review and publication
 
-The program committee will review all submissions and decide whether a contribution is *accepted for a talk*, *accepted for a keynote*, or *rejected*.
-
-All accepted abstracts will be published on [the HAL open archive](https://hal.archives-ouvertes.fr/), and accepted contributions will further be invited to submit short or full papers to a special issue of a journal.
+All accepted abstracts will be published on [the HAL open archive](https://hal.archives-ouvertes.fr/).
 
 ---
 
