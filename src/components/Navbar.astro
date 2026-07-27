@@ -1,0 +1,40 @@
+---
+const navItems = [
+  { href: '#call-for-papers', label: 'Call for Papers' },
+  { href: '/committee/', label: 'Committee' },
+];
+
+const base = import.meta.env.BASE_URL;
+const currentPath = Astro.url.pathname.replace(base, '/').replace(/\/+/g, '/');
+---
+
+<header class="site-header">
+  <div class="nav-bar">
+    <a class="nav-logo" href={`${base}`.replace(/\/?$/, '/')} aria-label="GAMA Days home">
+      <img src={`${base}images/logo.png`} alt="GAMA Days 2026" />
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round" />
+      </svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      {navItems.map((item) => (
+        <li>
+          <a href={`${base}${item.href.replace(/^\//, '')}`} aria-current={currentPath === item.href ? 'page' : undefined}>
+            {item.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</header>
+
+<script>
+  const toggle = document.getElementById('nav-toggle');
+  const links = document.getElementById('nav-links');
+  toggle?.addEventListener('click', () => {
+    const isOpen = links?.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(Boolean(isOpen)));
+  });
+</script>

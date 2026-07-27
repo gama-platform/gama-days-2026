@@ -1,0 +1,37 @@
+---
+interface Props {
+  eyebrow?: string;
+  title: string;
+  lead?: string;
+  image?: string;
+  imageAlt?: string;
+  buttons?: { label: string; href: string; secondary?: boolean }[];
+}
+
+const { eyebrow, title, lead, image, imageAlt = '', buttons = [] } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<section class="hero">
+  <div class="container">
+    <div class={`hero-grid ${image ? '' : 'no-image'}`}>
+      <div>
+        {eyebrow && <span class="eyebrow">{eyebrow}</span>}
+        <h1>{title}</h1>
+        {lead && <p class="lead" set:html={lead} />}
+        {buttons.length > 0 && (
+          <div class="button-row">
+            {buttons.map((b) => (
+              <a class={`button ${b.secondary ? 'secondary' : ''}`} href={b.href}>{b.label}</a>
+            ))}
+          </div>
+        )}
+      </div>
+      {image && (
+        <div class="hero-image">
+          <img src={`${base}${image.replace(/^\//, '')}`} alt={imageAlt} />
+        </div>
+      )}
+    </div>
+  </div>
+</section>

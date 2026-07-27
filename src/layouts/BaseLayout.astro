@@ -1,0 +1,44 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'GAMA Days 2026',
+  description = 'GAMA Days 2026 — the conference for users and developers of the GAMA agent-based modeling and simulation platform.',
+} = Astro.props;
+
+const pageTitle = title === 'GAMA Days 2026' ? title : `${title} · GAMA Days 2026`;
+const ogImage = 'https://gama-platform.org/img/gama-logo.png';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="shortcut icon" href="https://gama-platform.org/img/gama-logo.png" />
+
+    <meta property="og:title" content={`GAMA-Platform · ${pageTitle}`} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url.href} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content={ogImage} />
+  </head>
+  <body>
+    <Navbar />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
