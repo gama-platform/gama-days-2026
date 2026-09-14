@@ -15,7 +15,7 @@ buttons:
 ---
 
 <div class="key-dates">
-  <div class="key-date"><span class="key-date-label">Abstract deadline</span><span class="key-date-value"><s>15 September 2026</s> 25 September 2026</span></div>
+  <div class="key-date"><span class="key-date-label">Abstract deadline</span><span class="key-date-value"><s>15 September 2026</s><br />25 September 2026</span></div>
   <div class="key-date"><span class="key-date-label">Notification</span><span class="key-date-value">15 October 2026</span></div>
   <div class="key-date"><span class="key-date-label">Conference (online)</span><span class="key-date-value">23–25 November 2026</span></div>
 </div>
