@@ -7,7 +7,7 @@ export default defineConfig({
   redirects: {
     '/CFP.html': '/gama-days-2026/#call-for-papers',
     '/CFParticipation.html': '/gama-days-2026/#call-for-papers',
-    '/program.html': '/gama-days-2026/',
+    '/program.html': '/gama-days-2026/program/',
     '/keynotes.html': '/gama-days-2026/',
     '/openfora.html': '/gama-days-2026/',
     '/committee.html': '/gama-days-2026/committee/',

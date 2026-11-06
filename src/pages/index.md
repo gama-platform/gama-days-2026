@@ -20,6 +20,16 @@ buttons:
   <div class="key-date"><span class="key-date-label">Conference (online)</span><span class="key-date-value">23–25 November 2026</span></div>
 </div>
 
+## Program
+
+The tentative program is out! Over three days, nearly 60 talks cover tool development, environmental and ecological modeling, AI and intelligent agents, health and disaster risk, urban planning and mobility, and participatory and social modeling.
+
+<div class="button-row">
+  <a class="button" href="/gama-days-2026/program/">See the full program</a>
+</div>
+
+<hr/>
+
 ## Call for Papers
 
 After three successful editions in [2021](https://www.irit.fr/GamaDays2021/), [2022](https://gama-platform.org/gama.resources/Gama-Days-2022/) and [2024](https://gama-platform.org/gama-days-2024/), **GAMA Days 2026** offers a new opportunity for users and developers of the GAMA modelling and simulation platform to meet, present their work, expose their difficulties, suggest improvements and, more generally, exchange and collaborate on exciting topics related to GAMA!

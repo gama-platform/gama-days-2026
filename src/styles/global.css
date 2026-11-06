@@ -467,3 +467,157 @@ p {
 .footer-bottom a {
   color: #fff;
 }
+
+/* Program */
+.program-days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.program-days a {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1.5px solid var(--accent);
+  color: var(--accent-dark);
+}
+
+.program-days a:hover {
+  background: var(--accent-soft);
+  text-decoration: none;
+}
+
+.program-tz {
+  font-size: 0.95rem;
+}
+
+.program-day {
+  scroll-margin-top: 100px;
+  margin-bottom: 48px;
+}
+
+.program-list {
+  display: grid;
+  gap: 16px;
+}
+
+.program-time {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--accent-dark);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.program-title {
+  display: block;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.program-speaker {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--ink-faint);
+}
+
+.program-session-code {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  background: var(--accent-soft);
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin-bottom: 6px;
+}
+
+.program-session {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.program-session-head {
+  background: var(--bg-soft);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 20px;
+}
+
+.program-session-head h3 {
+  font-size: 1.05rem;
+  margin: 0 0 2px;
+}
+
+.program-session-time {
+  font-size: 0.85rem;
+  color: var(--ink-faint);
+}
+
+.program-talks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.program-talks li,
+.program-keynote,
+.program-event {
+  display: grid;
+  grid-template-columns: 7.5em 1fr;
+  gap: 16px;
+  padding: 12px 20px;
+  align-items: baseline;
+}
+
+.program-talks li + li {
+  border-top: 1px solid var(--border);
+}
+
+.program-keynote {
+  border: 1.5px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--accent-soft);
+  padding: 16px 20px;
+}
+
+.program-event {
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+.program-event .program-time {
+  color: #fff;
+}
+
+.program-event.is-break {
+  display: block;
+  background: transparent;
+  color: var(--ink-faint);
+  text-align: center;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 0;
+}
+
+@media (max-width: 560px) {
+  .program-talks li,
+  .program-keynote,
+  .program-event {
+    grid-template-columns: 1fr;
+    gap: 2px;
+    padding: 12px 16px;
+  }
+}

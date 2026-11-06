@@ -1,0 +1,75 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { days, timezone } from '../data/program.js';
+
+const frontmatter = {
+  title: 'Program',
+  eyebrow: 'Tentative',
+  description: 'Tentative conference program of GAMA Days 2026, 23–25 November 2026 (online).',
+  lead: 'Three days of talks from the GAMA community, 23–25 November 2026, online. The program is tentative and may still change slightly.',
+};
+
+const sessionRange = (talks) => {
+  const start = talks[0].time.split('–')[0].trim();
+  const end = talks[talks.length - 1].time.split('–')[1].trim();
+  return `${start} – ${end}`;
+};
+---
+
+<PageLayout frontmatter={frontmatter}>
+  <nav class="program-days" aria-label="Conference days">
+    {days.map((d) => <a href={`#${d.id}`}>{d.label}</a>)}
+  </nav>
+
+  {timezone && <p class="program-tz">All times are given in <strong>{timezone}</strong>.</p>}
+
+  {days.map((day) => (
+    <section class="program-day" id={day.id}>
+      <h2>{day.label}</h2>
+      <div class="program-list">
+        {day.blocks.map((b) => {
+          if (b.type === 'session') {
+            return (
+              <div class="program-session">
+                <div class="program-session-head">
+                  <span class="program-session-code">Session {b.code}</span>
+                  <h3>{b.name}</h3>
+                  <span class="program-session-time">{sessionRange(b.talks)}</span>
+                </div>
+                <ol class="program-talks">
+                  {b.talks.map((t) => (
+                    <li>
+                      <span class="program-time">{t.time}</span>
+                      <div>
+                        <span class="program-title">{t.title}</span>
+                        <span class="program-speaker">{t.speaker}</span>
+                      </div>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            );
+          }
+          if (b.type === 'keynote') {
+            return (
+              <div class="program-keynote">
+                <span class="program-time">{b.time}</span>
+                <div>
+                  <span class="program-session-code">Keynote</span>
+                  <span class="program-title">{b.title}</span>
+                  <span class="program-speaker">{b.speaker}</span>
+                </div>
+              </div>
+            );
+          }
+          return (
+            <div class={`program-event ${b.type === 'break' ? 'is-break' : ''}`}>
+              {b.time && <span class="program-time">{b.time}</span>}
+              <span>{b.title}</span>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  ))}
+</PageLayout>
