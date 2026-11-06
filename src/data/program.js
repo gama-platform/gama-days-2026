@@ -1,6 +1,6 @@
 // GAMA Days 2026 — tentative conference program.
 // Set `timezone` (e.g. "CET (UTC+1)") to display it on the program page.
-export const timezone = "";
+export const timezone = "Paris time (CET, UTC+1)";
 
 const s = (time, speaker, title) => ({ time, speaker, title });
 
