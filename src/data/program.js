@@ -24,9 +24,9 @@ export const days = [
         type: "session", code: "2a", name: "Environmental and Ecological Modeling",
         talks: [
           s("11:15 – 11:30", "Cabatingan Joanne Maryz", "An agent-based model of insecticide resistance in the brown planthopper: Comparing spray strategies in Mekong Delta rice"),
-          s("11:30 – 11:45", "Delattre Hadrien", "BioChains; a model for bioprocesses, biomass fluxes and logistics to simulate bioeconomy scenarii"),
+          s("11:30 – 11:45", "Arnejo Zenith", "Exploring Future Giant-Clam Trade and Conservation Trajectories Using a CITES-Informed Agent-Based Model"),
           s("11:45 – 12:00", "Chaiprom Usawadee", "BiodiVRestorer VU2: A GAMA-Driven Virtual Reality for Biodiversity Restoration, Toward School Curriculum Integration"),
-          s("12:00 – 12:15", "Arnejo Zenith", "Exploring Future Giant-Clam Trade and Conservation Trajectories Using a CITES-Informed Agent-Based Model"),
+          s("12:00 – 12:15", "Delattre Hadrien", "BioChains; a model for bioprocesses, biomass fluxes and logistics to simulate bioeconomy scenarii"),
           s("12:15 – 12:30", "Proverbio Daniele", "Proof-of-concept BDI modeling of green corridors for wildlife protection"),
         ],
       },
@@ -35,10 +35,10 @@ export const days = [
       {
         type: "session", code: "3a", name: "Algorithms, Artificial Intelligence and Intelligent Agent Modeling",
         talks: [
-          s("14:30 – 14:45", "Carvajal Bastidas Hernan David", "A reusable Gale-Shapley matching module for GAMA"),
-          s("14:45 – 15:00", "Ariel Noyman", "What if Networks Could Reason? Agent Guidance by Decision Models at Spatial Nodes"),
-          s("15:00 – 15:15", "Kong Haojia", "Coupling GAMA with LLMs for Simulating Dialogues Among Agents: An Application to Farmers' Attitudes Toward Smart Water Meters"),
-          s("15:15 – 15:30", "Verstaevel Nicolas", "MIMIcking the COmplexity of agent-based models: the MIMICO Project"),
+          s("14:30 – 14:45", "Paul Saves", "MIMIcking the COmplexity of agent-based models: the MIMICO Project"),
+          s("14:45 – 15:00", "Kong Haojia", "Coupling GAMA with LLMs for Simulating Dialogues Among Agents: An Application to Farmers' Attitudes Toward Smart Water Meters"),
+          s("15:00 – 15:15", "Carvajal Bastidas Hernan David", "A reusable Gale-Shapley matching module for GAMA"),
+          s("15:15 – 15:30", "Ariel Noyman", "What if Networks Could Reason? Agent Guidance by Decision Models at Spatial Nodes"),
         ],
       },
       {
@@ -120,8 +120,8 @@ export const days = [
       {
         type: "session", code: "5b", name: "Urban Planning and Mobility Simulation",
         talks: [
-          s("11:15 – 11:30", "Cueille Elisa", "Activity-Based Model in GAMA: Application to Hanoi's Mobility Transition"),
-          s("11:30 – 11:45", "Kimbangi Menakuntima Rabbi", "Agent-based modelling of traffic jam emergence at an urban roundabout in Kinshasa"),
+          s("11:15 – 11:30", "Kimbangi Menakuntima Rabbi", "Agent-based modelling of traffic jam emergence at an urban roundabout in Kinshasa"),
+          s("11:30 – 11:45", "Cueille Elisa", "Activity-Based Model in GAMA: Application to Hanoi's Mobility Transition"),
           s("11:45 – 12:00", "Vaulot Pierre", "Simulating Commuter Mobility in the Gipuzkoa Region: An Agent-Based Approach using GAMA"),
           s("12:00 – 12:15", "Biegel Jelle", "Using Agent-Based modelling to design urban food environments surrounding schools for adolescents. A case study on Strandeiland, Amsterdam"),
         ],
@@ -130,21 +130,21 @@ export const days = [
       {
         type: "session", code: "6b", name: "Participatory, Policy and Social Modeling",
         talks: [
-          s("14:00 – 14:15", "Gomez Gonzalez Elliot", "Hoarding or Solidarity? An Agent-Based Simulation for the Self-Regulation of Shared Water Resources"),
+          s("14:00 – 14:15", "Stolte Gregor", "Simulating Online Debates"),
           s("14:15 – 14:30", "Tokarska-Gołębiewska Ewa", "Prognostic CPTED: in silico testing of how neighborhood form steers adolescent socialization between cooperation and criminalization"),
           s("14:30 – 14:45", "Szymon Dziedzic", "From Iterated Prisoner's Dilemma to Design Standards: Which Laws of Cooperation Hold When Combined?"),
           s("14:45 – 15:00", "Georgiou Luce", "A Participatory Simulation Tool in Virtual Reality for Managing Stormwater Nature-Based Solutions"),
-          s("15:00 – 15:15", "Stolte Gregor", "Simulating Online Debates"),
+          s("15:00 – 15:15", "Gomez Gonzalez Elliot", "Hoarding or Solidarity? An Agent-Based Simulation for the Self-Regulation of Shared Water Resources"),
         ],
       },
       {
         type: "session", code: "4b", name: "Health, Education and Disaster Risk Simulation",
         talks: [
-          s("15:15 – 15:30", "Pia Figueroa Samuel", "Agent-Based Modeling of Urban Flooding and Storm Drainage Performance Under Rainfall and Waste Conditions"),
+          s("15:15 – 15:30", "Chapuis Kevin", "TsunaWAVE: coupling uncertain landslide-generated tsunami scenarios with agent-based evacuation modelling through an interactive web platform. Application to Mamoudzou (Mayotte, France)"),
           s("15:30 – 15:45", "Renard Mathieu", "Hybridization of conceptual modeling and agent-based simulation in a context of climate change-related crisis management"),
           s("15:45 – 16:00", "Szarejko Maciej", "Psychoergonomics as Environmental Behavioural Medicine: A Translational Path Built on In Silico Experiments in GAMA for Adolescent Digital Addiction Prevention"),
           s("16:00 – 16:15", "Sabaj Jagoda", "Simulating Autistic Spatial Related Experience in Public Offices: A Psychoergonomic in Silico Experiments in GAMA Platform"),
-          s("16:15 – 16:30", "Chapuis Kevin", "TsunaWAVE: coupling uncertain landslide-generated tsunami scenarios with agent-based evacuation modelling through an interactive web platform. Application to Mamoudzou (Mayotte, France)"),
+          s("16:15 – 16:30", "Pia Figueroa Samuel", "Agent-Based Modeling of Urban Flooding and Storm Drainage Performance Under Rainfall and Waste Conditions"),
         ],
       },
       { type: "event", time: "16:30 – 16:45", title: "Conference closing" },
