@@ -14,10 +14,10 @@ export const days = [
       {
         type: "session", code: "1a", name: "GAMA: Technological Integration, Tool Development and Model Analysis",
         talks: [
-          s("10:15 – 10:30", "Huynh Quang Nghi", "Next-Generation Infrastructure for GAMA: IDE Extensions, Containerization, and Mobile Integration"),
+          s("10:15 – 10:30", "Barbe Florian", "Project SIMPLE: Simplifying the integration of GAMA with Unity 3D"),
           s("10:30 – 10:45", "Ngongang Ruben Petteng", "Exporting standalone GAMA simulation, from an IDE project to a simplified executable usage"),
           s("10:45 – 11:00", "Dang Thai Son", "Moov'Hanoi: Design of a web-based architecture for operationalizing GAMA mobility simulations"),
-          s("11:00 – 11:15", "Barbe Florian", "Project SIMPLE: Simplifying the integration of GAMA with Unity 3D"),
+          s("11:00 – 11:15", "Huynh Quang Nghi", "Next-Generation Infrastructure for GAMA: IDE Extensions, Containerization, and Mobile Integration"),
         ],
       },
       {
