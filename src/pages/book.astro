@@ -1,0 +1,31 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import abstracts from '../data/book.json';
+
+const base = import.meta.env.BASE_URL;
+const pdf = `${base}book-gamadays2026-en.pdf`;
+
+const frontmatter = {
+  title: 'Book of Abstracts',
+  description: 'Book of abstracts of GAMA Days 2026, 23–25 November 2026 (online).',
+  lead: `All ${abstracts.length} abstracts presented at GAMA Days 2026, in a single PDF.`,
+  image: 'images/book-cover.png',
+  imageAlt: 'Cover of the GAMA Days 2026 book of abstracts',
+  buttons: [{ label: 'Download the book (PDF)', href: pdf }],
+};
+---
+
+<PageLayout frontmatter={frontmatter}>
+  <h2>Contents</h2>
+  <ol class="book-list">
+    {abstracts.map((a) => (
+      <li>
+        <a href={`${pdf}#page=${a.pdfPage}`} target="_blank" rel="noopener">
+          <span class="program-title">{a.title}</span>
+          <span class="program-speaker">{a.authors}</span>
+        </a>
+        <span class="book-page">p. {a.page}</span>
+      </li>
+    ))}
+  </ol>
+</PageLayout>

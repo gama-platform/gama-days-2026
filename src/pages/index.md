@@ -26,6 +26,7 @@ The tentative program is out! Over three days, nearly 60 talks cover tool develo
 
 <div class="button-row">
   <a class="button" href="/gama-days-2026/program/">See the full program</a>
+  <a class="button secondary" href="/gama-days-2026/book/">Book of Abstracts</a>
 </div>
 
 <hr/>

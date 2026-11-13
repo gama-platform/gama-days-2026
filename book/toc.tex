@@ -1,0 +1,45 @@
+% Table of contents of the GAMA Days 2026 book of abstracts.
+% Entries come from toc-entries.tex, written by build_book.py.
+% Each entry links to "gotopage:N"; build_book.py turns these into internal links.
+\documentclass{article}
+\usepackage[a4paper,left=2.2cm,right=2.2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\setmainfont{Poppins}[
+  Path=../public/fonts/,
+  Extension=.ttf,
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  FontFace={m}{n}{*-Regular},
+  FontFace={sb}{n}{*-SemiBold},
+]
+\newcommand{\semibold}{\fontseries{sb}\selectfont}
+
+\definecolor{gOrange}{HTML}{D4683A}
+\definecolor{gBlue}{HTML}{3870A0}
+\definecolor{gInk}{HTML}{1F2A36}
+\definecolor{gMuted}{HTML}{5B6773}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\raggedright
+
+% \entry{page}{title}{authors}
+\newcommand{\entry}[3]{%
+  \href{gotopage:#1}{%
+    \begin{minipage}[t]{0.9\linewidth}\raggedright
+      {\fontsize{9}{11.5}\selectfont\semibold\color{gInk}#2}\\
+      {\fontsize{7.5}{10}\selectfont\color{gMuted}#3}
+    \end{minipage}\hfill
+    \begin{minipage}[t]{0.08\linewidth}\raggedleft
+      {\fontsize{9}{11.5}\selectfont\semibold\color{gBlue}#1}
+    \end{minipage}}\par\vspace{5pt}%
+}
+
+\begin{document}
+{\color{gOrange}\rule{2.4cm}{3pt}}\par\vspace{12pt}
+{\fontsize{30}{36}\selectfont\bfseries\color{gInk}Contents}\par\vspace{20pt}
+\input{toc-entries}
+\end{document}

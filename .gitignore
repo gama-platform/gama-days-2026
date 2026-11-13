@@ -8,3 +8,12 @@ CfP_GAMA_Days_2026.fdb_latexmk
 CfP_GAMA_Days_2026.fls
 CfP_GAMA_Days_2026.log
 CfP_GAMA_Days_2026.out
+
+# Book of abstracts: generated files and large build input
+book/*.aux
+book/*.log
+book/*.out
+book/cover.pdf
+book/toc.pdf
+book/toc-entries.tex
+book/abstracts.pdf

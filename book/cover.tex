@@ -1,0 +1,69 @@
+% Cover page of the GAMA Days 2026 book of abstracts.
+% Build: lualatex cover.tex  (run from this folder; uses ../public assets)
+\documentclass{article}
+\usepackage[a4paper,margin=0pt]{geometry}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage[hidelinks]{hyperref}
+
+\setmainfont{Poppins}[
+  Path=../public/fonts/,
+  Extension=.ttf,
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  FontFace={m}{n}{*-Regular},
+  FontFace={sb}{n}{*-SemiBold},
+]
+\newcommand{\semibold}{\fontseries{sb}\selectfont}
+
+% Logo colours
+\definecolor{gYellow}{HTML}{EFB750}
+\definecolor{gOrange}{HTML}{D4683A}
+\definecolor{gBlue}{HTML}{3870A0}
+\definecolor{gInk}{HTML}{1F2A36}
+\definecolor{gMuted}{HTML}{5B6773}
+
+\pagestyle{empty}
+\begin{document}
+\begin{tikzpicture}[remember picture, overlay]
+  % Rings echoing the logo, bleeding off the top-right corner
+  \coordinate (C) at ($(current page.north east)+(0.8cm,0.8cm)$);
+  \draw[gYellow!25, line width=22pt] (C) circle (10.4cm);
+  \draw[gYellow,    line width=22pt] (C) ++(205:10.4cm) arc (205:268:10.4cm);
+  \draw[gOrange!20, line width=22pt] (C) circle (8.2cm);
+  \draw[gOrange,    line width=22pt] (C) ++(180:8.2cm) arc (180:235:8.2cm);
+  \draw[gBlue!20,   line width=22pt] (C) circle (6.0cm);
+  \draw[gBlue,      line width=22pt] (C) ++(220:6.0cm) arc (220:275:6.0cm);
+
+  % Logo
+  \node[anchor=north west] at ($(current page.north west)+(2.2cm,-2.2cm)$)
+    {\includegraphics[width=8cm]{../public/images/logo.png}};
+
+  % Title block
+  \node[anchor=south west, align=left, text width=15cm]
+    at ($(current page.south west)+(2.2cm,12.5cm)$) {%
+    {\color{gOrange}\rule{2.4cm}{3pt}}\\[14pt]
+    {\fontsize{50}{56}\selectfont\bfseries\color{gInk}Book\hspace{0.3em}of\\Abstracts}
+  };
+
+  % Date / place
+  \node[anchor=north west, align=left]
+    at ($(current page.south west)+(2.2cm,11.6cm)$) {%
+    {\fontsize{15}{20}\selectfont\semibold\color{gBlue}23--25 November 2026}\\[4pt]
+    {\fontsize{13}{18}\selectfont\color{gMuted}Online conference}\\[4pt]
+    {\fontsize{11}{16}\selectfont\color{gMuted}\href{https://gama-platform.org/gama-days-2026}{gama-platform.org/gama-days-2026}}
+  };
+
+  % Footer band with organisers
+  \fill[gInk!4] (current page.south west) rectangle ($(current page.south east)+(0,4.6cm)$);
+  \node[anchor=west, align=left] at ($(current page.south west)+(2.2cm,2.3cm)$)
+    {{\fontsize{10}{13}\selectfont\color{gMuted}Organised by}};
+  \node[anchor=east] at ($(current page.south east)+(-7.6cm,2.3cm)$)
+    {\includegraphics[height=1.9cm]{ummisco.png}};
+  \node[anchor=east] at ($(current page.south east)+(-2.2cm,2.3cm)$)
+    {\includegraphics[height=2.0cm]{../public/images/Logo IRD_bloc_Baseline_UK.png}};
+\end{tikzpicture}
+\null
+\end{document}

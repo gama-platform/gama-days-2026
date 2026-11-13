@@ -1,0 +1,287 @@
+[
+ {
+  "page": 2,
+  "title": "A Participatory Simulation Tool in Virtual Reality for Managing Stormwater Nature-Based Solutions",
+  "authors": "Georgiou Luce et al."
+ },
+ {
+  "page": 3,
+  "title": "A Pedestrian Mobility Simulation Tool for Evaluating Transit Expansion and Densification in Freetown, Sierra Leone",
+  "authors": "Pierre Georine et al."
+ },
+ {
+  "page": 4,
+  "title": "A livestock feed ration optimization model for agri-food scenarios",
+  "authors": "Boton Xavier et al."
+ },
+ {
+  "page": 5,
+  "title": "A model to quantify the effect of diversity within the herd on the resilience of dairy sheep farming systems in the face of climate change",
+  "authors": "Le Goff Morgane et al."
+ },
+ {
+  "page": 6,
+  "title": "A reusable Gale-Shapley matching module for GAMA",
+  "authors": "Carvajal Bastidas Hernan David et al."
+ },
+ {
+  "page": 8,
+  "title": "A server-client architecture for model coupling: the case of MAELIA and STICS",
+  "authors": "Lesquoy Baptiste et al."
+ },
+ {
+  "page": 9,
+  "title": "Activity-Based Model in GAMA: Application to Hanoi's Mobility Transition",
+  "authors": "Cueille Elisa et al."
+ },
+ {
+  "page": 11,
+  "title": "Agent-Based Modeling of Urban Flooding and Storm Drainage Performance Under Rainfall and Waste Conditions",
+  "authors": "Pia Figueroa Samuel et al."
+ },
+ {
+  "page": 13,
+  "title": "Agent-Based Simulation of Insecurity Perception and Pedestrian Route Choice in Student Mobility in Central Guadalajara",
+  "authors": "Quintana-Rodriguez Francisco et al."
+ },
+ {
+  "page": 16,
+  "title": "Agent-based modelling of traffic jam emergence at an urban roundabout in Kinshasa",
+  "authors": "Kimbangi Menakuntima Rabbi et al."
+ },
+ {
+  "page": 18,
+  "title": "Amenities, Quality of Life, and Displacement: A Cellular Automaton and Agent-Based Model of Gentrification",
+  "authors": "Contreras Jaime et al."
+ },
+ {
+  "page": 21,
+  "title": "An Agent-Based Model of Neighbourhood Security, Housing Prices and Displacement in GAMA",
+  "authors": "Lomelin Juan Pablo et al."
+ },
+ {
+  "page": 23,
+  "title": "An Integrated GAMA Framework for Urban Mobility: From Mode Choice Decisions to Network Congestion Dynamics",
+  "authors": "Palomo-Briones Gamaliel et al."
+ },
+ {
+  "page": 25,
+  "title": "An agent-based model of insecticide resistance in the brown planthopper: Comparing spray strategies in Mekong Delta rice",
+  "authors": "Cabatingan Joanne Maryz et al."
+ },
+ {
+  "page": 27,
+  "title": "An agent-based model of public Junior High School choice: A case study in San Pablo City, Philippines",
+  "authors": "Gaza John Cedric et al."
+ },
+ {
+  "page": 28,
+  "title": "BioChains; a model for bioprocesses, biomass fluxes and logistics to simulate bioeconomy scenarii",
+  "authors": "Delattre Hadrien et al."
+ },
+ {
+  "page": 30,
+  "title": "BiodiVRestorer VU2: A GAMA-Driven Virtual Reality for Biodiversity Restoration, Toward School Curriculum Integration",
+  "authors": "Chaiprom Usawadee et al."
+ },
+ {
+  "page": 32,
+  "title": "Comparative Analysis of Evacuation Scenarios using Agent-based Modelling: The 2020 Flood Event in Vietnam",
+  "authors": "Huong Ngan Vu et al."
+ },
+ {
+  "page": 34,
+  "title": "Coupling GAMA with LLMs for Simulating Dialogues Among Agents: An Application to Farmers' Attitudes Toward Smart Water Meters",
+  "authors": "Kong Haojia et al."
+ },
+ {
+  "page": 36,
+  "title": "Development of a Participatory Urban Design Environment Based on Stylized Representations of Urban Structure",
+  "authors": "Tenma Ryota et al."
+ },
+ {
+  "page": 37,
+  "title": "Distributing GAMA Simulations on HPC Clusters with the Distribution Model",
+  "authors": "Grosjean Lucas"
+ },
+ {
+  "page": 38,
+  "title": "Evaluating Green Streetscape Interventions with GAMA: Pedestrian, Vehicle, and Ecological Trade-offs in Gowanus",
+  "authors": "Wang Zening et al."
+ },
+ {
+  "page": 40,
+  "title": "Exploring Future Giant-Clam Trade and Conservation Trajectories Using a CITES-Informed Agent-Based Model",
+  "authors": "Arnejo Zenith et al."
+ },
+ {
+  "page": 41,
+  "title": "Exporting standalone GAMA simulation, from an IDE project to a simplified executable usage",
+  "authors": "Ngongang Ruben Petteng et al."
+ },
+ {
+  "page": 42,
+  "title": "FastBathtub - a fast, interactive, reduced-complexity flood-inundation agent-based model implemented in GAMA",
+  "authors": "Nguyen Thanh Do et al."
+ },
+ {
+  "page": 43,
+  "title": "From Iterated Prisoner's Dilemma to Design Standards: Which Laws of Cooperation Hold When Combined?",
+  "authors": "Szymon Dziedzic et al."
+ },
+ {
+  "page": 44,
+  "title": "From Relief Camp to Slum or City: in silico testing of how socio-spatial moderators steer migrant co-adaptation between criminalisation and self-revitalisation",
+  "authors": "Robert Czajka et al."
+ },
+ {
+  "page": 46,
+  "title": "From Simulation to Situated Experience: Coupling GAMA and Unity for Immersive Tsunami Risk Awareness in Mayotte",
+  "authors": "Chapuis Kevin et al."
+ },
+ {
+  "page": 47,
+  "title": "From Urban Design to Population Health: Agent-Based Modelling as a Translational Medicine Tool",
+  "authors": "Dmochowski Tymon et al."
+ },
+ {
+  "page": 48,
+  "title": "GAMAX: Compiling GAML Models to JAX for Faster Simulations",
+  "authors": "Soulé Julien"
+ },
+ {
+  "page": 50,
+  "title": "Hoarding or Solidarity? An Agent-Based Simulation for the Self-Regulation of Shared Water Resources",
+  "authors": "Gomez Gonzalez Elliot et al."
+ },
+ {
+  "page": 53,
+  "title": "Hybridization of conceptual modeling and agent-based simulation in a context of climate change-related crisis management",
+  "authors": "Renard Mathieu et al."
+ },
+ {
+  "page": 54,
+  "title": "Learning in and with GAMA: bridging agent-based modelling and machine learning",
+  "authors": "Lesquoy Baptiste et al."
+ },
+ {
+  "page": 55,
+  "title": "MIMIcking the COmplexity of agent-based models: the MIMICO Project",
+  "authors": "Verstaevel Nicolas et al."
+ },
+ {
+  "page": 57,
+  "title": "Modelling insect interactions in rice crops on the GAMA platform as a basis for educational VR games",
+  "authors": "Seth Rattanak"
+ },
+ {
+  "page": 59,
+  "title": "Moov'Hanoi: Design of a web-based architecture for operationalizing GAMA mobility simulations",
+  "authors": "Dang Thai Son et al."
+ },
+ {
+  "page": 61,
+  "title": "Next-Generation Infrastructure for GAMA: IDE Extensions, Containerization, and Mobile Integration",
+  "authors": "Huynh Quang Nghi"
+ },
+ {
+  "page": 62,
+  "title": "Of interactive simulations and bureaucrats – participatory reserach navigating hydraulic uncertainties",
+  "authors": "Biré Léo et al."
+ },
+ {
+  "page": 63,
+  "title": "Plugging Language Models into GAMA Mobility Simulations: Generative Mode Choice Against a Real Household Travel Survey",
+  "authors": "Bru Yves et al."
+ },
+ {
+  "page": 65,
+  "title": "Prognostic CPTED: in silico testing of how neighborhood form steers adolescent socialization between cooperation and criminalization",
+  "authors": "Tokarska-Gołębiewska Ewa et al."
+ },
+ {
+  "page": 66,
+  "title": "Project SIMPLE: Simplifying the integration of GAMA with Unity 3D",
+  "authors": "Barbe Florian et al."
+ },
+ {
+  "page": 67,
+  "title": "Proof-of-concept BDI modeling of green corridors for wildlife protection",
+  "authors": "Proverbio Daniele"
+ },
+ {
+  "page": 68,
+  "title": "Psychoergonomics as Environmental Behavioural Medicine: A Translational Path Built on In Silico Experiments in GAMA for Adolescent Digital Addiction Prevention",
+  "authors": "Hryniewicz Joanna et al."
+ },
+ {
+  "page": 69,
+  "title": "Quantifying Building-Related Climate Impacts in Hamburg through a Digital Twin",
+  "authors": "Sok Chanattan et al."
+ },
+ {
+  "page": 70,
+  "title": "SBDI Architecture: Enabling Spatial Reasoning in Cognitive Agents for Traffic Simulations",
+  "authors": "Kakeu Tuekam Severin Vianey et al."
+ },
+ {
+  "page": 72,
+  "title": "STARFARM: An Agent-Based Model for Exploring Agroecological Transitions in the Vietnamese Mekong Delta",
+  "authors": "Taillandier Patrick et al."
+ },
+ {
+  "page": 74,
+  "title": "Sensitivity Analysis in Hierarchical and Mixed Parameter Space. Application to Decision Rules of the MAELIA model",
+  "authors": "Pianet Benjamin et al."
+ },
+ {
+  "page": 76,
+  "title": "Simulating Autistic Spatial Related Experience in Public Offices: A Psychoergonomic in Silico Experiments in GAMA Platform",
+  "authors": "Sabaj Jagoda et al."
+ },
+ {
+  "page": 78,
+  "title": "Simulating Commuter Mobility in the Gipuzkoa Region: An Agent-Based Approach using GAMA",
+  "authors": "Vaulot Pierre et al."
+ },
+ {
+  "page": 79,
+  "title": "Simulating Habit Formation in Urban Green Infrastructures: A Spatial Anchor Mechanism in the Strolling Activity Simulator (SAS)",
+  "authors": "Mikołaj Szurlej"
+ },
+ {
+  "page": 80,
+  "title": "Simulating Online Debates",
+  "authors": "Stolte Gregor et al."
+ },
+ {
+  "page": 81,
+  "title": "TANGO: An open-source framework to visualize GAMA simulations through tangible robots",
+  "authors": "Brugière Arthur et al."
+ },
+ {
+  "page": 82,
+  "title": "TsunaWAVE : coupling uncertain landslide-generated tsunami scenarios with agent-based evacuation modelling through an interactive web platform. Application to Mamoudzou (Mayotte, France)",
+  "authors": "Carles Noé et al."
+ },
+ {
+  "page": 83,
+  "title": "Urban Mobility Improvement Methods and Their Acceptance: An Agent-Based Model of Commuter Mode Choice",
+  "authors": "Castillo Kenneth et al."
+ },
+ {
+  "page": 86,
+  "title": "Using Agent-Based modelling to design urban food environments surrounding schools for adolescents. A case study on Strandeiland, Amsterdam",
+  "authors": "Biegel Jelle"
+ },
+ {
+  "page": 88,
+  "title": "Using MAELIA platform for participatory climate adaptation of agricultural territories: an integrated assessment and multi-agent modelling approach",
+  "authors": "Seghouani Mounir et al."
+ },
+ {
+  "page": 89,
+  "title": "What if Networks Could Reason? Agent Guidance by Decision Models at Spatial Nodes",
+  "authors": "Ariel Noyman"
+ }
+]
