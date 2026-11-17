@@ -5,6 +5,8 @@ Inputs (this folder):
   toc.tex        table of contents layout
   toc.json       one entry per abstract: printed page number, title, authors
   abstracts.pdf  the abstracts; its first page carries printed number 2
+  originals/     optional: authors' PDFs named by Sciencesconf id (767597.pdf),
+                 replacing that submission's pages where Sciencesconf's copy lost text
 Outputs:
   ../public/book-gamadays2026-en.pdf   the book, served by the website
   ../public/images/book-cover.png      cover thumbnail for the website
@@ -91,6 +93,38 @@ def drop_rule(doc: pymupdf.Document, page: pymupdf.Page) -> None:
     doc.update_stream(xref, RULE_STROKE.sub(rb"\1\2n", stream, count=1))
 
 
+# Sciencesconf draws the submitted page as one form XObject: "q a 0 0 d e f cm /Fm1 Do Q".
+PLACED_FORM = re.compile(rb"q\s+([\d.]+)\s+0\s+0\s+([\d.]+)\s+(-?[\d.]+)\s+(-?[\d.]+)\s+cm\s+/(\w+)\s+Do\s+Q")
+
+
+def use_original(doc: pymupdf.Document, page: pymupdf.Page) -> str | None:
+    """Swap the embedded submission for the author's PDF in originals/, if there is one.
+
+    The original goes at the same place and in the same drawing order, under
+    Sciencesconf's rule and number. Returns the original's file name when swapped.
+    """
+    for xref, name, _, bbox in page.get_xobjects():
+        obj = doc.xref_object(xref)
+        file = re.search(r"/PTEX\.FileName \(\./(\d+\.pdf)\)", obj)
+        if file and (HERE / "originals" / file.group(1)).exists():
+            break
+    else:
+        return None
+    pno = int(re.search(r"/PTEX\.PageNumber (\d+)", obj).group(1)) - 1
+    hits = [(x, s, m) for x in page.get_contents()
+            for s in [doc.xref_stream(x)] for m in [PLACED_FORM.search(s)]
+            if m and m.group(5).decode() == name]
+    (cxref, stream, m), = hits
+    a, d, e, f = (float(v) for v in m.group(1, 2, 3, 4))
+    x0, y0, x1, y1 = bbox  # PDF coordinates, origin bottom-left
+    H = page.rect.height
+    target = pymupdf.Rect(e + a * x0, H - (f + d * y1), e + a * x1, H - (f + d * y0))
+    doc.update_stream(cxref, stream[:m.start()] + stream[m.end():])
+    page.show_pdf_page(target, pymupdf.open(HERE / "originals" / file.group(1)), pno,
+                       keep_proportion=False, overlay=False)
+    return file.group(1)
+
+
 def lualatex(name: str) -> None:
     for _ in range(2):  # second pass places the cover's tikz overlay
         subprocess.run(
@@ -117,14 +151,17 @@ def main() -> None:
     front = book.page_count
     abstracts = pymupdf.open(HERE / "abstracts.pdf")
     first_pages = {e["page"] for e in toc}
-    dropped = []
+    dropped, swapped = [], []
     for i, page in enumerate(abstracts):
         printed = FIRST_PRINTED + i
+        if original := use_original(abstracts, page):
+            swapped.append(f"{printed} ({original})")
         if printed not in first_pages:
             drop_rule(abstracts, page)
         if number_clashes(page, printed):
             drop_number(abstracts, page)
             dropped.append(printed)
+    print("pages from authors' originals:", swapped)
     print("page number removed (overlaps content):", dropped)
     book.insert_pdf(abstracts)
 
