@@ -235,6 +235,8 @@ p {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 0.95rem;
+  line-height: 1;
+  justify-content: center;
   padding: 12px 22px;
   border-radius: 999px;
   background: var(--accent);
@@ -263,6 +265,14 @@ p {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 20px;
+}
+
+.button-row + .button-row {
+  margin-top: 12px;
+}
+
+.button-icon {
+  flex-shrink: 0;
 }
 
 /* Content sections */

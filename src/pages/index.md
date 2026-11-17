@@ -7,8 +7,12 @@ lead: "GAMA Days 2026 is an online conference open to all users and developers o
 image: images/contribution.png
 imageAlt: "GAMA platform contributions"
 buttons:
+  - label: Join the conference on Zoom
+    href: https://ird-fr.zoom.us/j/94750532363?pwd=JLOVMXqugg4KuhzxGgB0wuH97QICSo.1
+    icon: zoom
   - label: Submit your abstract
     href: https://gamadays2026.sciencesconf.org/
+    secondary: true
   - label: Download the Call for Papers (PDF)
     href: /gama-days-2026/CfP_GAMA_Days_2026.pdf
     secondary: true
@@ -23,6 +27,8 @@ buttons:
 ## Program
 
 The tentative program is out! Over three days, nearly 60 talks cover tool development, environmental and ecological modeling, AI and intelligent agents, health and disaster risk, urban planning and mobility, and participatory and social modeling.
+
+All three days take place in the same Zoom room: [join the conference](https://ird-fr.zoom.us/j/94750532363?pwd=JLOVMXqugg4KuhzxGgB0wuH97QICSo.1).
 
 <div class="button-row">
   <a class="button" href="/gama-days-2026/program/">See the full program</a>

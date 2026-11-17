@@ -1,5 +1,6 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import ZoomIcon from '../components/ZoomIcon.astro';
 import { days, timezone } from '../data/program.js';
 
 const frontmatter = {
@@ -20,6 +21,10 @@ const sessionRange = (talks) => {
   <nav class="program-days" aria-label="Conference days">
     {days.map((d) => <a href={`#${d.id}`}>{d.label}</a>)}
   </nav>
+
+  <div class="button-row">
+    <a class="button" href="https://ird-fr.zoom.us/j/94750532363?pwd=JLOVMXqugg4KuhzxGgB0wuH97QICSo.1"><ZoomIcon />Join the conference on Zoom</a>
+  </div>
 
   {timezone && <p class="program-tz">All times are given in <strong>{timezone}</strong>.</p>}
 

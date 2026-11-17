@@ -5,11 +5,15 @@ interface Props {
   lead?: string;
   image?: string;
   imageAlt?: string;
-  buttons?: { label: string; href: string; secondary?: boolean }[];
+  buttons?: { label: string; href: string; secondary?: boolean; icon?: string }[];
 }
+
+import ZoomIcon from './ZoomIcon.astro';
 
 const { eyebrow, title, lead, image, imageAlt = '', buttons = [] } = Astro.props;
 const base = import.meta.env.BASE_URL;
+// Primary buttons on the first row, secondary ones grouped on the next.
+const rows = [buttons.filter((b) => !b.secondary), buttons.filter((b) => b.secondary)].filter((r) => r.length);
 ---
 
 <section class="hero">
@@ -19,13 +23,16 @@ const base = import.meta.env.BASE_URL;
         {eyebrow && <span class="eyebrow">{eyebrow}</span>}
         <h1>{title}</h1>
         {lead && <p class="lead" set:html={lead} />}
-        {buttons.length > 0 && (
+        {rows.map((row) => (
           <div class="button-row">
-            {buttons.map((b) => (
-              <a class={`button ${b.secondary ? 'secondary' : ''}`} href={b.href}>{b.label}</a>
+            {row.map((b) => (
+              <a class={`button ${b.secondary ? 'secondary' : ''}`} href={b.href}>
+                {b.icon === 'zoom' && <ZoomIcon />}
+                {b.label}
+              </a>
             ))}
           </div>
-        )}
+        ))}
       </div>
       {image && (
         <div class="hero-image">
