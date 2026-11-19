@@ -71,7 +71,7 @@ export const days = [
       {
         type: "session", code: "4a", name: "Health, Education and Disaster Risk Simulation",
         talks: [
-          s("11:30 – 11:45", "Huong Ngan Vu", "Comparative Analysis of Evacuation Scenarios using Agent-based Modelling: The 2020 Flood Event in Vietnam"),
+          s("11:30 – 11:45", "Renard Mathieu", "Hybridization of conceptual modeling and agent-based simulation in a context of climate change-related crisis management"),
           s("11:45 – 12:00", "Nguyen Thanh Do", "FastBathtub - a fast, interactive, reduced-complexity flood-inundation agent-based model implemented in GAMA"),
           s("12:00 – 12:15", "Seth Rattanak", "Modelling insect interactions in rice crops on the GAMA platform as a basis for educational VR games"),
           s("12:15 – 12:30", "Chapuis Kevin", "From Simulation to Situated Experience: Coupling GAMA and Unity for Immersive Tsunami Risk Awareness in Mayotte"),
@@ -141,7 +141,7 @@ export const days = [
         type: "session", code: "4b", name: "Health, Education and Disaster Risk Simulation",
         talks: [
           s("15:15 – 15:30", "Chapuis Kevin", "TsunaWAVE: coupling uncertain landslide-generated tsunami scenarios with agent-based evacuation modelling through an interactive web platform. Application to Mamoudzou (Mayotte, France)"),
-          s("15:30 – 15:45", "Renard Mathieu", "Hybridization of conceptual modeling and agent-based simulation in a context of climate change-related crisis management"),
+          s("15:30 – 15:45", "Huong Ngan Vu", "Comparative Analysis of Evacuation Scenarios using Agent-based Modelling: The 2020 Flood Event in Vietnam"),
           s("15:45 – 16:00", "Szarejko Maciej", "Psychoergonomics as Environmental Behavioural Medicine: A Translational Path Built on In Silico Experiments in GAMA for Adolescent Digital Addiction Prevention"),
           s("16:00 – 16:15", "Sabaj Jagoda", "Simulating Autistic Spatial Related Experience in Public Offices: A Psychoergonomic in Silico Experiments in GAMA Platform"),
           s("16:15 – 16:30", "Pia Figueroa Samuel", "Agent-Based Modeling of Urban Flooding and Storm Drainage Performance Under Rainfall and Waste Conditions"),
