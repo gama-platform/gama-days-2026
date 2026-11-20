@@ -44,7 +44,7 @@ export const days = [
       {
         type: "session", code: "2b", name: "Environmental and Ecological Modeling",
         talks: [
-          s("15:30 – 15:45", "Boton Xavier", "A livestock feed ration optimization model for agri-food scenarios"),
+          s("15:30 – 15:45", "Boton Xavier", "A livestock feed allocation model for agri-food scenarios at the territorial scale"),
           s("15:45 – 16:00", "Le Goff Morgane", "A model to quantify the effect of diversity within the herd on the resilience of dairy sheep farming systems in the face of climate change"),
           s("16:00 – 16:15", "Sok Chanattan", "Quantifying Building-Related Climate Impacts in Hamburg through a Digital Twin"),
           s("16:15 – 16:30", "Szurlej Mikołaj", "Simulating Habit Formation in Urban Green Infrastructures: A Spatial Anchor Mechanism in the Strolling Activity Simulator (SAS)"),
